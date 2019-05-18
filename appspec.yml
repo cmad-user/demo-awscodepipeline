@@ -4,10 +4,6 @@ files:
   - source: /
     destination: /home/ec2-user
 hooks:
-  AfterInstall:
-    - location: fix_previleges.sh
-      timeout: 300
-      runas: ubuntu
   ApplicationStop:
     - location: stop_application.sh
       timeout: 300
