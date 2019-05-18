@@ -6,6 +6,8 @@ env:
 
 phases:
   install:
+    runtime-versions:
+        java: openjdk8  
     commands:
     - echo Installing maven...
     - apt-get update -y
