@@ -7,7 +7,7 @@ hooks:
   AfterInstall:
     - location: fix_previleges.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
   ApplicationStop:
     - location: stop_application.sh
       timeout: 300
@@ -15,4 +15,4 @@ hooks:
   ApplicationStart:
     - location: start_application.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
