@@ -1,4 +1,3 @@
 #!/bin/bash
 echo "Stopping application server..."
-pkill -f 'java -jar' | true
-exit 0;
+curl -X POST localhost:8080/actuator/shutdown
